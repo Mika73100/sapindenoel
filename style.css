@@ -19,9 +19,15 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-color: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-image: url("./img/forest-310072.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 65%;
+    background-size: 30%;
+    background-image: z-index 999;
 }
+
+
 
 
 h1{
@@ -36,12 +42,14 @@ h1{
     justify-content: center;
     /*ici je met position relative pour fixé les déco du sapin en fonction de la div sapin */
     position: relative;
+
+    
 }
 
 .etage{
     height: var(--height);
     width: var(--width);
-    background: linear-gradient(rgb(231 255 228 / 68%), rgb(97 160 97));
+    background: linear-gradient(rgb(231 255 228 / 68%), rgb(51, 126, 51));
     /*background-color: rgb(51, 136, 51);*/
     /*ici je met clip-path qui défini une forme en polygon et ensuite j'utilise l'ax  X et Y pour définir les points ou la jonction de la forme sera faite. */
     clip-path: polygon(50% 0, 100% 100%, 0 100%);
