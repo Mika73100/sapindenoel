@@ -1,0 +1,9 @@
+.sapin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*ici je met position relative pour fixé les déco du sapin en fonction de la div sapin */
+    position: relative;
+}
+

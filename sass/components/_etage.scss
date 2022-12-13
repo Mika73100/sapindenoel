@@ -1,0 +1,39 @@
+.etage{
+    height: var(--height);
+    width: var(--width);
+    background: linear-gradient(rgb(231 255 228 / 68%), rgb(51, 126, 51));
+    /*background-color: rgb(51, 136, 51);*/
+    /*ici je met clip-path qui défini une forme en polygon et ensuite j'utilise l'ax  X et Y pour définir les points ou la jonction de la forme sera faite. */
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+/*ici je cible toutes les div présente dans l'élément */
+.etage:nth-of-type(1) {
+    height: calc(var(--height) * 0.25);
+    width: calc(var(--width) * 0.25);
+    transform: translateY(377%);
+}
+
+.etage:nth-of-type(2) {
+    height: calc(var(--height) * 0.50);
+    width: calc(var(--width) * 0.50);
+    transform: translateY(160%);
+}
+
+.etage:nth-of-type(3) {
+    height: calc(var(--height) * 0.75);
+    width: calc(var(--width) * 0.75);
+    transform: translateY(70%);
+}
+
+.bas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tronc{
+    width: 60px;
+    height: 100px;
+    background-color: #642d00;
+}
